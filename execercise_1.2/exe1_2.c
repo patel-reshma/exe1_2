@@ -47,13 +47,7 @@ int main()
         printf("Parent: Error trying to fork() (%d)\n", errno);
     }
     printf("%s : Exiting...\n", ((role == 0) ? "Parent" : "Child"));
+
     return 0;
-
-
-
-
-
-
-
 }
 
