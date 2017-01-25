@@ -1,0 +1,77 @@
+///////////////////////////////////////
+//    
+
+#include<stdio.h>
+#define MAX 3
+
+struct v {
+   int i; /* row */
+   int j; /* column */
+};
+void *mul(void *val);
+int main() {
+int a[MAX][MAX], b[MAX][MAX], c[MAX][MAX], i, j, k;
+int sum = 0;
+pthread_t tid;
+pthread_attr_t attr;
+           
+printf("\nEnter First Matrix : n");
+for (i = 0; i < 3; i++) {
+    for (j = 0; j < 3; j++) {
+        scanf("%d", &a[i][j]);
+    }
+}            
+printf("\nEnter Second Matrix:n");
+for (i = 0; i < 3; i++) {
+    for (j = 0; j < 3; j++) {
+        scanf("%d", &b[i][j]);
+    }
+}
+                    
+printf("The First Matrix is: \n");
+for (i = 0; i < 3; i++) {
+    for (j = 0; j < 3; j++) {
+        printf(" %d ", a[i][j]);
+    }
+    printf("\n");
+}
+                            
+printf("The Second Matrix is : \n");
+for (i = 0; i < 3; i++) {
+    for (j = 0; j < 3; j++) {
+        printf(" %d ", b[i][j]);
+    }
+    printf("\n");
+}
+for (i = 0; i <= 2; i++) { 
+for (j = 0; j <= 2; j++) {
+    sum = 0;
+    for (k = 0; k <= 2; k++) {
+ 		struct v *data = (struct v *) malloc(sizeof(struct v));
+        data->i = i;
+        data->j = j;
+        //sum = sum + a[i][k] * b[k][j];
+        pthread_attr_init(&attr);
+                 //Create the thread
+        pthread_create(&tid,&attr,mul,data);
+                 //Make sure the parent waits for all thread to complet
+        pthread_join(tid, NULL);
+    }
+    c[i][j] = sum;
+}
+}
+printf("\nMultiplication Of Two Matrices : \n");
+for (i = 0; i < 3; i++) {
+    for (j = 0; j < 3; j++) {
+        printf(" %d ", c[i][j]);
+    }
+    printf("\n");
+}
+return (0);
+}
+
+void *mul(void *data)
+{
+    sum = sum + a[i][k] * b[k][j];
+    pthread_exit(0);
+}
