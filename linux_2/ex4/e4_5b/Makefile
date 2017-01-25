@@ -1,29 +1,27 @@
 ################################################################### 
 #	Name
-#	Author
-#	
-#
+#	#	Author
+#	#	
+#	#
 ################################################################### 
+
 CC = gcc
-EXE = TicketReservation 
+LDFLAGS+= -lpthread
+all: clean read
 
-all: clean binary
-
-binary: main.o product.o 
-	$CC main.o product.o
+read: main.o read.o  
+	$(CC) main.o read.o -lpthread
+	$(CC) $^ $(LDFLAGS) -o $@
 clean :
 	@echo "\033[0;31m"
 	@echo "========================================================="
 	@echo "                 Cleaning Started                    "
 	@echo "========================================================="
 	@echo "\033[0m"
-	
 	rm  -rf *.o *~
-	
 	@echo "\033[0;31m"
 	@echo "========================================================="
 	@echo "                 Cleaning Finished                       "
 	@echo "========================================================="
 	@echo "\033[0m"
-
 

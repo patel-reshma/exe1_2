@@ -3,23 +3,13 @@
 #include <pthread.h>
 
 #define SIZE 1024
-pthread_mutex_t mu;
+
 FILE* fr;
 FILE* fm;
 char* buf;
 
-void main()
+void* read()
 {
-    int j = 0;
-    if((fr = fopen("temp_r","wb")) == NULL){
-        printf("temp_r not available");
-    } else {
-            for(j=0;j<500;j++) {
-                fprintf(fr,"%d \n", j);
-            }
-    }
-    fclose(fr);
-    
     fm = fopen("temp_w","w");
     if(fm == NULL) {
     printf("file temp_w is not available");
