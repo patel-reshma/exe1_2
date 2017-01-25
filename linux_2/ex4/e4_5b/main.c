@@ -9,7 +9,7 @@ void main()
 {
 	pthread_t tid1;
     int j = 0;
-    if((fr = fopen("temp_r","wb")) == NULL){
+    if((fr = fopen("temp_r","wb")) == NULL) {
         printf("temp_r not available");
     } else {
             for(j=0;j<500;j++) {
