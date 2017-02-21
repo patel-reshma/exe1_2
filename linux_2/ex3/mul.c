@@ -69,11 +69,10 @@ for(i = 0; i < M; i++) {
         pthread_attr_init(&attr);
         //Create the thread
         pthread_create(&tid,&attr,runner,data);
-        //Make sure the parent waits for all thread to complete
-        pthread_join(tid, NULL);
-        count++;
+		pthread_join(tid, NULL);
       }
    }
+
 
    //Print out the resulting matrix
    printf("resultant matrix is \n");
