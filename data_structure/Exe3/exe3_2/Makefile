@@ -3,7 +3,7 @@ PWD = `pwd`
 SRC_DIR = $(PWD)/src
 INC = $(PWD)/inc
 BIN_DIR = $ bin
-BINARY = sort 
+EXE = task
 
 all: clean binary 
 
