@@ -1,0 +1,172 @@
+\hypertarget{library_8h}{\section{inc/library.h File Reference}
+\label{library_8h}\index{inc/library.\-h@{inc/library.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structnode__type}{node\-\_\-type}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structnode__type}{node\-\_\-type} \hyperlink{library_8h_a07932e4b55271bf3fd045c8988ebb43c}{node}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{library_8h_a4c37b66533194799312bd575f84497f2}{failure} (char $\ast$)
+\begin{DoxyCompactList}\small\item\em A useful method. \end{DoxyCompactList}\item 
+int \hyperlink{library_8h_a65071f88a32d39c1c6a1932ad05f08db}{Initlinklist} (void $\ast$$\ast$first, void $\ast$$\ast$end, int max\-Size, int flag)
+\item 
+int \hyperlink{library_8h_a070e72185b25d9c15dd75359450d9664}{Displaylist} (void $\ast$rear)
+\item 
+int \hyperlink{library_8h_a824dea4a9cc33758fa1464efa31cb919}{Insert\-Node} (void $\ast$$\ast$front, void $\ast$$\ast$rear, int value, int flag)
+\item 
+int \hyperlink{library_8h_a0403feef4454e37c11c0f8fa7c3fd1f6}{Insert\-Nodeat} (void $\ast$$\ast$front, void $\ast$$\ast$rear, int value, int pos)
+\item 
+int \hyperlink{library_8h_ab19b9707a4ae75df696f7bed4c6fffaa}{Delete\-Node} (void $\ast$$\ast$rear)
+\item 
+int \hyperlink{library_8h_a39c202199dc05d911ed224eeac98d16a}{Delete\-Node\-From} (void $\ast$$\ast$rear, int pos)
+\item 
+int \hyperlink{library_8h_a5a561725073cff84c67c2122c9861b4f}{Sort\-List} (void $\ast$$\ast$rear)
+\item 
+int \hyperlink{library_8h_abc2250f0526a7ae7b5e42d5cf57865f8}{Search\-Data} (void $\ast$$\ast$rear, int data)
+\item 
+int \hyperlink{library_8h_afb649021b325406d92217c1a426ec464}{Reverse\-List} (void $\ast$$\ast$rear)
+\item 
+int \hyperlink{library_8h_af9f5b541914ef2f8bc4b7042d932c895}{get\-List\-Size} (void $\ast$$\ast$rear, int $\ast$length)
+\item 
+int \hyperlink{library_8h_ae18ad41e0b16b080b2499c2766e5ceb0}{deletelist} (void $\ast$$\ast$rear)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{library_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{count}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{library_8h_a07932e4b55271bf3fd045c8988ebb43c}{\index{library.\-h@{library.\-h}!node@{node}}
+\index{node@{node}!library.h@{library.\-h}}
+\subsubsection[{node}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf node\-\_\-type} {\bf node}}}\label{library_8h_a07932e4b55271bf3fd045c8988ebb43c}
+
+
+\subsection{Function Documentation}
+\hypertarget{library_8h_ae18ad41e0b16b080b2499c2766e5ceb0}{\index{library.\-h@{library.\-h}!deletelist@{deletelist}}
+\index{deletelist@{deletelist}!library.h@{library.\-h}}
+\subsubsection[{deletelist}]{\setlength{\rightskip}{0pt plus 5cm}int deletelist (
+\begin{DoxyParamCaption}
+\item[{void $\ast$$\ast$}]{rear}
+\end{DoxyParamCaption}
+)}}\label{library_8h_ae18ad41e0b16b080b2499c2766e5ceb0}
+\hypertarget{library_8h_ab19b9707a4ae75df696f7bed4c6fffaa}{\index{library.\-h@{library.\-h}!Delete\-Node@{Delete\-Node}}
+\index{Delete\-Node@{Delete\-Node}!library.h@{library.\-h}}
+\subsubsection[{Delete\-Node}]{\setlength{\rightskip}{0pt plus 5cm}int Delete\-Node (
+\begin{DoxyParamCaption}
+\item[{void $\ast$$\ast$}]{rear}
+\end{DoxyParamCaption}
+)}}\label{library_8h_ab19b9707a4ae75df696f7bed4c6fffaa}
+\hypertarget{library_8h_a39c202199dc05d911ed224eeac98d16a}{\index{library.\-h@{library.\-h}!Delete\-Node\-From@{Delete\-Node\-From}}
+\index{Delete\-Node\-From@{Delete\-Node\-From}!library.h@{library.\-h}}
+\subsubsection[{Delete\-Node\-From}]{\setlength{\rightskip}{0pt plus 5cm}int Delete\-Node\-From (
+\begin{DoxyParamCaption}
+\item[{void $\ast$$\ast$}]{rear, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}}\label{library_8h_a39c202199dc05d911ed224eeac98d16a}
+\hypertarget{library_8h_a070e72185b25d9c15dd75359450d9664}{\index{library.\-h@{library.\-h}!Displaylist@{Displaylist}}
+\index{Displaylist@{Displaylist}!library.h@{library.\-h}}
+\subsubsection[{Displaylist}]{\setlength{\rightskip}{0pt plus 5cm}int Displaylist (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{rear}
+\end{DoxyParamCaption}
+)}}\label{library_8h_a070e72185b25d9c15dd75359450d9664}
+\hypertarget{library_8h_a4c37b66533194799312bd575f84497f2}{\index{library.\-h@{library.\-h}!failure@{failure}}
+\index{failure@{failure}!library.h@{library.\-h}}
+\subsubsection[{failure}]{\setlength{\rightskip}{0pt plus 5cm}void failure (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{library_8h_a4c37b66533194799312bd575f84497f2}
+
+
+A useful method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & an integer setting how useful to be \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output that is extra useful
+\end{DoxyReturn}
+This method does unbelievably useful things. And returns exceptionally useful results. Use it everyday with good health. \hypertarget{library_8h_af9f5b541914ef2f8bc4b7042d932c895}{\index{library.\-h@{library.\-h}!get\-List\-Size@{get\-List\-Size}}
+\index{get\-List\-Size@{get\-List\-Size}!library.h@{library.\-h}}
+\subsubsection[{get\-List\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int get\-List\-Size (
+\begin{DoxyParamCaption}
+\item[{void $\ast$$\ast$}]{rear, }
+\item[{int $\ast$}]{length}
+\end{DoxyParamCaption}
+)}}\label{library_8h_af9f5b541914ef2f8bc4b7042d932c895}
+\hypertarget{library_8h_a65071f88a32d39c1c6a1932ad05f08db}{\index{library.\-h@{library.\-h}!Initlinklist@{Initlinklist}}
+\index{Initlinklist@{Initlinklist}!library.h@{library.\-h}}
+\subsubsection[{Initlinklist}]{\setlength{\rightskip}{0pt plus 5cm}int Initlinklist (
+\begin{DoxyParamCaption}
+\item[{void $\ast$$\ast$}]{first, }
+\item[{void $\ast$$\ast$}]{end, }
+\item[{int}]{max\-Size, }
+\item[{int}]{flag}
+\end{DoxyParamCaption}
+)}}\label{library_8h_a65071f88a32d39c1c6a1932ad05f08db}
+\hypertarget{library_8h_a824dea4a9cc33758fa1464efa31cb919}{\index{library.\-h@{library.\-h}!Insert\-Node@{Insert\-Node}}
+\index{Insert\-Node@{Insert\-Node}!library.h@{library.\-h}}
+\subsubsection[{Insert\-Node}]{\setlength{\rightskip}{0pt plus 5cm}int Insert\-Node (
+\begin{DoxyParamCaption}
+\item[{void $\ast$$\ast$}]{front, }
+\item[{void $\ast$$\ast$}]{rear, }
+\item[{int}]{value, }
+\item[{int}]{flag}
+\end{DoxyParamCaption}
+)}}\label{library_8h_a824dea4a9cc33758fa1464efa31cb919}
+\hypertarget{library_8h_a0403feef4454e37c11c0f8fa7c3fd1f6}{\index{library.\-h@{library.\-h}!Insert\-Nodeat@{Insert\-Nodeat}}
+\index{Insert\-Nodeat@{Insert\-Nodeat}!library.h@{library.\-h}}
+\subsubsection[{Insert\-Nodeat}]{\setlength{\rightskip}{0pt plus 5cm}int Insert\-Nodeat (
+\begin{DoxyParamCaption}
+\item[{void $\ast$$\ast$}]{front, }
+\item[{void $\ast$$\ast$}]{rear, }
+\item[{int}]{value, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}}\label{library_8h_a0403feef4454e37c11c0f8fa7c3fd1f6}
+\hypertarget{library_8h_afb649021b325406d92217c1a426ec464}{\index{library.\-h@{library.\-h}!Reverse\-List@{Reverse\-List}}
+\index{Reverse\-List@{Reverse\-List}!library.h@{library.\-h}}
+\subsubsection[{Reverse\-List}]{\setlength{\rightskip}{0pt plus 5cm}int Reverse\-List (
+\begin{DoxyParamCaption}
+\item[{void $\ast$$\ast$}]{rear}
+\end{DoxyParamCaption}
+)}}\label{library_8h_afb649021b325406d92217c1a426ec464}
+\hypertarget{library_8h_abc2250f0526a7ae7b5e42d5cf57865f8}{\index{library.\-h@{library.\-h}!Search\-Data@{Search\-Data}}
+\index{Search\-Data@{Search\-Data}!library.h@{library.\-h}}
+\subsubsection[{Search\-Data}]{\setlength{\rightskip}{0pt plus 5cm}int Search\-Data (
+\begin{DoxyParamCaption}
+\item[{void $\ast$$\ast$}]{rear, }
+\item[{int}]{data}
+\end{DoxyParamCaption}
+)}}\label{library_8h_abc2250f0526a7ae7b5e42d5cf57865f8}
+\hypertarget{library_8h_a5a561725073cff84c67c2122c9861b4f}{\index{library.\-h@{library.\-h}!Sort\-List@{Sort\-List}}
+\index{Sort\-List@{Sort\-List}!library.h@{library.\-h}}
+\subsubsection[{Sort\-List}]{\setlength{\rightskip}{0pt plus 5cm}int Sort\-List (
+\begin{DoxyParamCaption}
+\item[{void $\ast$$\ast$}]{rear}
+\end{DoxyParamCaption}
+)}}\label{library_8h_a5a561725073cff84c67c2122c9861b4f}
+
+
+\subsection{Variable Documentation}
+\hypertarget{library_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}{\index{library.\-h@{library.\-h}!count@{count}}
+\index{count@{count}!library.h@{library.\-h}}
+\subsubsection[{count}]{\setlength{\rightskip}{0pt plus 5cm}int count}}\label{library_8h_ad43c3812e6d13e0518d9f8b8f463ffcf}
