@@ -32,7 +32,7 @@ int main()
         printf(" \n 9.Reverse the list");
         printf(" \n10.Find the size of the list");
         printf(" \n11.Make list empty");
-        printf(" \n12. Exit\n");
+        printf(" \n12.Exit\n");
         printf(" \nChoose Option: ");
         scanf("%d", &ch);
 
@@ -78,7 +78,8 @@ int main()
             time = clock();
             SortList(&end);
             time = clock() - time;
-            printf("Execution timing: %f seconds\n", (double)(time) / CLOCKS_PER_SEC);
+            printf("Execution timing: %f seconds\n", 
+				(double)(time) / CLOCKS_PER_SEC);
             break;
 
         case 8:
